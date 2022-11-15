@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
     {
       transform.position = new Vector3(-13, transform.position.y, transform.position.z);
     }
-    else if (transform.position.x > 13)
-    {
-      transform.position = new Vector3(13, transform.position.y, transform.position.z);
-    }
+    // else if (transform.position.x > 13)
+    // {
+    //   transform.position = new Vector3(13, transform.position.y, transform.position.z);
+    // }
 
 
     // buat loncat 

@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
 
     //disable enemy tetapi tidak menghilang dari scene
     GetComponent<Collider2D>().enabled = false;
+    GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     this.enabled = false;
   }
 }

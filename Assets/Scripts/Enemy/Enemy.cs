@@ -37,8 +37,9 @@ public class Enemy : MonoBehaviour
 
   void Die()
   {
-
-    //animasi mati
+    print("ad");
+    GetComponent<LootBag>().InstantiateLoot(transform.position);
+    //animasi mati  
     animator.SetBool("die", true);
 
     //disable enemy tetapi tidak menghilang dari scene

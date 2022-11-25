@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7144928556033016886}
   - component: {fileID: 4111505510749716178}
   - component: {fileID: 2929402984290708846}
+  - component: {fileID: 8090955538507663868}
   m_Layer: 7
   m_Name: MeleeEnemy
   m_TagString: Enemy
@@ -186,3 +187,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15870482, y: 0.19814645}
   m_EdgeRadius: 0
+--- !u!114 &8090955538507663868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929402984290708843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86348691960ab64dadb9226bffe0480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 3182722142866924050, guid: b6757a5272857a749a9df877e50da3dd, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 627df5107723a9947b424a286e5a4501, type: 2}
+  - {fileID: 11400000, guid: 20465332f2eaf934b951798f3e689d8e, type: 2}
+  - {fileID: 11400000, guid: cbb6c7dba6adbe0428a16cd59d28be85, type: 2}

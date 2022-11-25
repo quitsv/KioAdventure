@@ -1,36 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    public float enemySpeed;
-    public bool turn; // untuk musuh berbalik
-    void Start()
-    {
-        turn = true;
-        rb = GetComponent<Rigidbody2D>();
-    }
+  [Header("Patrol Points")]
+  [SerializeField] private Transform leftEdge;
+  [SerializeField] private Transform rightEdge;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(turn){
-            rb.velocity = new Vector2 (enemySpeed , rb.velocity.y);
-            transform.rotation = Quaternion.Euler(0f,0f,0f);
-        }else{
-            rb.velocity = new Vector2 (-enemySpeed , rb.velocity.y);
-            transform.rotation = Quaternion.Euler(0f,180f,0f);
-        }
-        
-    }
+  [Header("Enemy")]
+  [SerializeField] private Transform enemy;
 
-     private void OnTriggerEnter2D (Collider2D collision){
-        if ( collision.gameObject.CompareTag("Turn")){
-            turn = !turn;
-        }
+  [Header("Movement parameters")]
+  [SerializeField] private float speed;
+  private Vector3 initScale;
+  private bool movingLeft;
+
+  [Header("Idle Behaviour")]
+  [SerializeField] private float idleDuration;
+  private float idleTimer;
+
+  [Header("Enemy Animator")]
+  [SerializeField] private Animator anim;
+
+  private void Awake()
+  {
+    initScale = enemy.localScale;
+  }
+
+  private void OnDisable()
+  {
+    anim.SetBool("moving", false);
+  }
+
+  private void Update()
+  {
+    if (movingLeft)
+    {
+      if (enemy.position.x >= leftEdge.position.x)
+        MoveInDirection(-1);
+      else
+        DirectionChange();
     }
+    else
+    {
+      if (enemy.position.x <= rightEdge.position.x)
+        MoveInDirection(1);
+      else
+        DirectionChange();
+    }
+  }
+
+  private void DirectionChange()
+  {
+    anim.SetBool("moving", false);
+    idleTimer += Time.deltaTime;
+
+    if (idleTimer > idleDuration)
+      movingLeft = !movingLeft;
+  }
+
+  private void MoveInDirection(int direction)
+  {
+    idleTimer = 0;
+    anim.SetBool("moving", true);
+    enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * direction, initScale.y, initScale.z);
+    enemy.position = new Vector3(enemy.position.x + speed * direction * Time.deltaTime, enemy.position.y, enemy.position.z);
+  }
 }
-
-

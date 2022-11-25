@@ -1,79 +1,72 @@
-
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-  //buat manggil function/object body
+  [SerializeField] private float speed;
+  [SerializeField] private LayerMask groundLayer;
   private Rigidbody2D body;
   private Animator anim;
-  private bool grounded;
-  float horizontalInput;
-  //biar speed ngereffer ke unitynya langsung waktu kita ganti speednya 
-  [SerializeField] private float speed;
+  private BoxCollider2D boxCollider;
+  private float horizontalInput;
 
-  // grab refferences to rigidbody and animator from object
   private void Awake()
   {
+    //ambil reference dari komponen Rigidbody2D dan Animator
     body = GetComponent<Rigidbody2D>();
     anim = GetComponent<Animator>();
+    boxCollider = GetComponent<BoxCollider2D>();
   }
 
-  void Update()
+  private void Update()
   {
     horizontalInput = Input.GetAxis("Horizontal");
-    //buat gerak kiri kanan
     body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
-    //buat ngeflip player kalo gerak kiri kanan
-    if (horizontalInput > 0.01f)
+    // flip player sprite when moving left or right
+    if (horizontalInput > 0)
     {
       transform.localScale = new Vector3(10, 10, 10);
     }
-    else if (horizontalInput < -0.01f)
+    else if (horizontalInput < 0)
     {
       transform.localScale = new Vector3(-10, 10, 10);
     }
 
-    //buat ngecek kalo player di pinggir map
-    if (transform.position.x < -13)
-    {
-      transform.position = new Vector3(-13, transform.position.y, transform.position.z);
-    }
-    // else if (transform.position.x > 13)
-    // {
-    //   transform.position = new Vector3(13, transform.position.y, transform.position.z);
-    // }
-
-
-    // buat loncat 
-    if (Input.GetKey(KeyCode.Space) && grounded)
+    if (Input.GetKey(KeyCode.Space))
     {
       Jump();
     }
 
-    //set animation parameter
+    // set animation
     anim.SetBool("run", horizontalInput != 0);
-    anim.SetBool("grounded", grounded);
+    anim.SetBool("grounded", isGrounded());
   }
 
   private void Jump()
   {
-    body.velocity = new Vector2(body.velocity.x, speed);
-    anim.SetTrigger("jump");
-    grounded = false;
-  }
-
-  public bool canAttack()
-  {
-    return horizontalInput == 0 && grounded;
+    if (isGrounded())
+    {
+      body.velocity = new Vector2(body.velocity.x, speed);
+      anim.SetTrigger("jump");
+    }
   }
 
   private void OnCollisionEnter2D(Collision2D collision)
   {
-    if (collision.gameObject.tag == "Ground")
+    if (collision.gameObject.CompareTag("Ground"))
     {
-      grounded = true;
-    }
 
+    }
+  }
+
+
+  private bool isGrounded()
+  {
+    RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+    return raycastHit.collider != null;
+  }
+
+  public bool canAttack() {
+    return isGrounded();
   }
 }

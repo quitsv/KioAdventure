@@ -108,12 +108,12 @@ TextureImporter:
       name: death_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 50
         y: 223
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 28
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: death_1
       rect:
         serializedVersion: 2
-        x: 44
+        x: 48
         y: 184
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 32
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: death_2
       rect:
         serializedVersion: 2
-        x: 44
+        x: 45
         y: 145
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 35
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5375507, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,9 +174,9 @@ TextureImporter:
         x: 44
         y: 106
         width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5355209, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,11 +193,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 44
-        y: 68
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 67
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.60288525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: death_5
       rect:
         serializedVersion: 2
-        x: 44
+        x: 48
         y: 37
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 33
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4834055, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: death_6
       rect:
         serializedVersion: 2
-        x: 44
+        x: 50
         y: 8
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 27
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5040563, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

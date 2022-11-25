@@ -112,9 +112,9 @@ TextureImporter:
         y: 46
         width: 23
         height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 5, y: 0, z: 5, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -129,13 +129,13 @@ TextureImporter:
       name: hit_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 58
         y: 7
-        width: 24
+        width: 19
         height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 4, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0

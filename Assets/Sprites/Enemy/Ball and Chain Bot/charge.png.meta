@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: charge_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 124
+        width: 29
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5927632, y: 0.006157585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59af233727b05b24e9e007fdbd273ab9
+      internalID: 752696606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 85
+        width: 30
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5996348, y: 0.0018257473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba6613c5bdeba64c90c1d3d825b5246
+      internalID: 24879884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 46
+        width: 30
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5963135, y: 0.0018257473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b61d30ca485f842a02342c78b7064c
+      internalID: 513830924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 30
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5996348, y: 0.0018263278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3ffec2325a15042ba0b21f945ed111
+      internalID: -139657255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +198,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      charge_1: 24879884
+      charge_2: 513830924
+      charge_4: -565431287
+      charge_6: -1319207358
+      charge_0: 752696606
+      charge_7: -399806323
+      charge_9: 1211015186
+      charge_3: -139657255
+      charge_10: 745379465
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7138161148406547429}
   - component: {fileID: 7138161148406547430}
-  - component: {fileID: 3471675539291798256}
+  - component: {fileID: -1008173323357521782}
   m_Layer: 0
   m_Name: EnemyPatrol
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MonoBehaviour:
   speed: 2
   idleDuration: 1
   anim: {fileID: 0}
---- !u!114 &3471675539291798256
+--- !u!114 &-1008173323357521782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,8 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86348691960ab64dadb9226bffe0480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedItemPrefab: {fileID: 0}
-  lootList: []
+  droppedItemPrefab: {fileID: 4602833791051838841, guid: 1f1d7801eb0bfe441b59d7656ca2cca7, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 627df5107723a9947b424a286e5a4501, type: 2}
+  - {fileID: 11400000, guid: 20465332f2eaf934b951798f3e689d8e, type: 2}
+  - {fileID: 11400000, guid: cbb6c7dba6adbe0428a16cd59d28be85, type: 2}
 --- !u!1 &7138161148826947149
 GameObject:
   m_ObjectHideFlags: 0

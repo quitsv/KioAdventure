@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 
   //set health enemy
   public int maxHealth = 100;
-  int currentHealth;
+  public int currentHealth;
 
   void Start()
   {
@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
     //cek apakah health masih lebih dari 0
     if (currentHealth > 0)
     {
-      animator.SetTrigger("hurt");
+      animator.SetTrigger("hit");
     }
     else
     {
@@ -37,7 +37,6 @@ public class Enemy : MonoBehaviour
 
   void Die()
   {
-    print("ad");
     GetComponent<LootBag>().InstantiateLoot(transform.position);
     //animasi mati  
     animator.SetBool("die", true);

@@ -4343,6 +4343,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562245390}
   m_CullTransparentMesh: 1
+--- !u!1 &565479951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929402984290708843, guid: 7fd7acc32a5b6284b8989068f46af604, type: 3}
+  m_PrefabInstance: {fileID: 8592569296679260411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &599648680
 GameObject:
   m_ObjectHideFlags: 0
@@ -7651,6 +7656,21 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 2929402984290708847, guid: 7fd7acc32a5b6284b8989068f46af604, type: 3}
   m_PrefabInstance: {fileID: 8592569296679260411}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1088905185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565479951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbade40577a7e44f92b38ebf1f9606a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1088905179}
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1102589579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12008,26 +12028,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1030708394}
     m_Modifications:
-    - target: {fileID: 3471675539291798256, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
-      propertyPath: droppedItemPrefab
-      value: 
-      objectReference: {fileID: 3182722142866924050, guid: b6757a5272857a749a9df877e50da3dd, type: 3}
-    - target: {fileID: 3471675539291798256, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
-      propertyPath: lootList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3471675539291798256, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 627df5107723a9947b424a286e5a4501, type: 2}
-    - target: {fileID: 3471675539291798256, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 20465332f2eaf934b951798f3e689d8e, type: 2}
-    - target: {fileID: 3471675539291798256, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: cbb6c7dba6adbe0428a16cd59d28be85, type: 2}
     - target: {fileID: 7138161148406547428, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
       propertyPath: m_Name
       value: EnemyPatrol
@@ -12084,7 +12084,9 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 1088905174}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: -1008173323357521782, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
 --- !u!1001 &8592569296679260411
 PrefabInstance:
@@ -12145,5 +12147,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7fd7acc32a5b6284b8989068f46af604, type: 3}

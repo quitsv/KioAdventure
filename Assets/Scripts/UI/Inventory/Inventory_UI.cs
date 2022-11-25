@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Invetory_UI : MonoBehaviour
 {
 
     public GameObject inventoryPanel;
     
     void Start()
     {
-        
+       
     }
 
     void Update()

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3850770782507261029}
   - component: {fileID: 3850770782507261030}
   - component: {fileID: 3850770782507261026}
+  - component: {fileID: -2096055640494362353}
   m_Layer: 3
   m_Name: Kio
   m_TagString: Player
@@ -210,6 +211,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2096055640494362353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850770782507261031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45ddf687d0081748858b120a9965ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+    slots:
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
 --- !u!1 &3850770782764942009
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,4 +46,5 @@ public class Enemy : MonoBehaviour
     GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     this.enabled = false;
   }
+
 }

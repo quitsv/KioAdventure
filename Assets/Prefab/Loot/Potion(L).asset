@@ -15,3 +15,4 @@ MonoBehaviour:
   lootSprite: {fileID: 21300000, guid: bc2a82bad85bcbb45b9892c69fabdd3b, type: 3}
   lootName: Potion (L)
   dropChance: 25
+  type: 3

@@ -28,6 +28,9 @@ public class PlayerAttack : MonoBehaviour
 
   private void Attack()
   {
+    if (PauseMenu.isPaused())
+      return;
+
     anim.SetTrigger("attack");
     cooldownTimer = 0;
     Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

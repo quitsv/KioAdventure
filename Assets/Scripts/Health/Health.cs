@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Inventory.Model;
 
 public class Health : MonoBehaviour
 {
@@ -38,14 +39,26 @@ public class Health : MonoBehaviour
     {
       if (!dead)
       {
-        animator.SetTrigger("die");
-        foreach (Behaviour component in components)
-        {
-          component.enabled = false;
-        }
-        dead = true;
+        Die();
       }
     }
+  }
+
+  private void Die()
+  {
+    animator.SetTrigger("die");
+    foreach (Behaviour component in components)
+    {
+      component.enabled = false;
+    }
+    dead = true;
+
+    //drop item when enemy dies
+    if (gameObject.CompareTag("Enemy"))
+    {
+      GetComponent<LootBag>().InstantiateLoot((transform.position + new Vector3(0, 1f, 0)));      
+    }
+    Destroy(gameObject, 5f);
   }
 
   private IEnumerator FlashSprite()

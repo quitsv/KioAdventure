@@ -7,6 +7,8 @@ public class EnemyDamage : MonoBehaviour
     protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-            collision.GetComponent<Health>().TakeDamage(damage);
+            //check to avoid null reference exception
+            if (collision.GetComponent<Health>() != null)
+                collision.GetComponent<Health>().TakeDamage(damage);
     }
 }

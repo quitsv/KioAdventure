@@ -11046,6 +11046,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5234360497418459813, guid: 191717c93eda654469452c17690c5f8c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -98.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234360497418459813, guid: 191717c93eda654469452c17690c5f8c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 464.597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234360497418459813, guid: 191717c93eda654469452c17690c5f8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
+      objectReference: {fileID: 0}
     - target: {fileID: 5234360497721375504, guid: 191717c93eda654469452c17690c5f8c, type: 3}
       propertyPath: m_Name
       value: Inventory
@@ -11223,6 +11235,14 @@ PrefabInstance:
       propertyPath: droppedItemPrefab
       value: 
       objectReference: {fileID: 409356284363477062, guid: 280f4bd73571f2b4ab0723fd8e41c258, type: 3}
+    - target: {fileID: 1943799225754748221, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
+      propertyPath: lootList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a03a2edcc3b86d04b80cd2ae4d759d4a, type: 2}
+    - target: {fileID: 1943799225754748221, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
+      propertyPath: lootList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2db3e7236621524088dfc5e4a8a34b7, type: 2}
     - target: {fileID: 7138161148406547428, guid: a40d5eb63a4cb484485c4e5f11296048, type: 3}
       propertyPath: m_Name
       value: EnemyPatrol

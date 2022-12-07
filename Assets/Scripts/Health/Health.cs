@@ -86,4 +86,14 @@ public class Health : MonoBehaviour
   {
     return dead;
   }
+
+  public void AddHealth(int value){
+
+    if (currentHealth > 0){
+      currentHealth = currentHealth + 0;
+    }else{
+      currentHealth = currentHealth + value;
+    }
+
+  }
 }

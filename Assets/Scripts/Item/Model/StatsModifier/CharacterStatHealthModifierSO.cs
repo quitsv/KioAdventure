@@ -12,7 +12,7 @@ public class CharacterStatHealthModifierSO : CharacterStatModifierSO
         {
             health.AddHealth((int)val);
         }else{
-            Debug.Log("gada health");
+            Debug.Log("no health");
         }
     }
 }

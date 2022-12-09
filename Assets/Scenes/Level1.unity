@@ -10941,6 +10941,18 @@ PrefabInstance:
       propertyPath: inventoryMenu
       value: 
       objectReference: {fileID: 174295768}
+    - target: {fileID: 6533107633282918787, guid: ff8a31a07e98690418f24a6161ae180d, type: 3}
+      propertyPath: initialItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533107633282918787, guid: ff8a31a07e98690418f24a6161ae180d, type: 3}
+      propertyPath: initialItems.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: f2db3e7236621524088dfc5e4a8a34b7, type: 2}
+    - target: {fileID: 6533107633282918787, guid: ff8a31a07e98690418f24a6161ae180d, type: 3}
+      propertyPath: initialItems.Array.data[0].quantity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8a31a07e98690418f24a6161ae180d, type: 3}
 --- !u!1001 &5234360497627165123

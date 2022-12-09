@@ -11,6 +11,8 @@ public class CharacterStatHealthModifierSO : CharacterStatModifierSO
         if (health != null)
         {
             health.AddHealth((int)val);
+        }else{
+            Debug.Log("gada health");
         }
     }
 }

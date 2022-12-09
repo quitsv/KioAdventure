@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 1660406547
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1977430784, guid: 37383faf6c37eee40ab8411da219415d, type: 3}
+  m_Sprite: {fileID: -1390718908, guid: 37383faf6c37eee40ab8411da219415d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.09, y: 0.11}
+    oldSize: {x: 0.09, y: 0.1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66328f6c7236671469d4ccce00edfa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InventoryItem>k__BackingField: {fileID: 11400000, guid: 1c979956dacce5345a62c95387814d36, type: 2}
+  <InventoryItem>k__BackingField: {fileID: 11400000, guid: f2db3e7236621524088dfc5e4a8a34b7, type: 2}
   <Quantity>k__BackingField: 1
   audioSource: {fileID: 439093562}
   duration: 0.2

@@ -34,6 +34,7 @@ public class Health : MonoBehaviour
     {
       animator.SetTrigger("hit");
       StartCoroutine(FlashSprite());
+      Debug.Log(currentHealth);
     }
     else
     {
@@ -88,12 +89,16 @@ public class Health : MonoBehaviour
   }
 
   public void AddHealth(int value){
-
-    if (currentHealth > 0){
+    
+    if (currentHealth == 100){
       currentHealth = currentHealth + 0;
+      Debug.Log("full health!");
     }else{
       currentHealth = currentHealth + value;
+       Debug.Log(currentHealth);
     }
-
+  
+ 
+  // Debug.Log("ngisi darah");
   }
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df5aa4dfe2262c47acc412e3f578688, type: 3}
+  m_Name: LargePotions
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 99
+  <Name>k__BackingField: Potion (L)
+  <Description>k__BackingField: 'Restore 30 Health '
+  <ItemImage>k__BackingField: {fileID: 1324004690, guid: 37383faf6c37eee40ab8411da219415d, type: 3}
+  <DropChance>k__BackingField: 50
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 9f393ed051b4fc841a36973d573479d3, type: 2}
+    value: 30
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 77f79dff86b419c4d8cae9a619d26a95, type: 3}

@@ -201,16 +201,16 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Terrain (16x16) 1_0
+      name: stone
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 80
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 1
+        y: 129
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.51384753, y: 0.5830858}
+      border: {x: 0, y: 0, z: 0, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -538,8 +538,8 @@ TextureImporter:
       Terrain (16x16) 1_5: 3960460497668127647
       Terrain (16x16) 1_1: 7720078550713291429
       Terrain (16x16) 1_7: 1959242234642493429
+      stone: -5742017059485446288
       Terrain (16x16) 1_11: 83881842087414782
-      Terrain (16x16) 1_0: -5742017059485446288
       Terrain (16x16) 1_8: -5467818790455678805
   spritePackingTag: 
   pSDRemoveMatte: 0

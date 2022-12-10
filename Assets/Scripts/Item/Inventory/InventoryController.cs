@@ -106,7 +106,7 @@ namespace Inventory
             IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
             if (destroyableItem != null)
             {
-                inventoryMenu.AddAction("Drop", () => DropItem(itemIndex, inventoryItem.quantity));
+                inventoryMenu.AddAction("Discard", () => DropItem(itemIndex, inventoryItem.quantity));
             }
 
         }

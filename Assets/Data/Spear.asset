@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df5aa4dfe2262c47acc412e3f578688, type: 3}
+  m_Name: Spear
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 1
+  <Name>k__BackingField: Spear Of Grugnir
+  <Description>k__BackingField: Equipable once and gain more attack power.
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: ea99d8326f37bf24e880f459e8088e3d, type: 3}
+  <DropChance>k__BackingField: 100
+  modifiersData: []
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 77f79dff86b419c4d8cae9a619d26a95, type: 3}

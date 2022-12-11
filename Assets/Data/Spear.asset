@@ -16,7 +16,7 @@ MonoBehaviour:
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Spear Of Grugnir
   <Description>k__BackingField: Equipable once and gain more attack power.
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: ea99d8326f37bf24e880f459e8088e3d, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: c2ef85c875c1cb542adc864b945949c8, type: 3}
   <DropChance>k__BackingField: 100
   modifiersData: []
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 77f79dff86b419c4d8cae9a619d26a95, type: 3}

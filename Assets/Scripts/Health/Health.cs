@@ -115,4 +115,9 @@ public class Health : MonoBehaviour
 
         // Debug.Log("ngisi darah");
     }
+
+    public void SetInvulnerable(bool value)
+    {
+        invulnerable = value;
+    }
 }

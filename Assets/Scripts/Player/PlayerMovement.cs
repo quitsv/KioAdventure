@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // set animation
-    anim.SetBool("run", horizontalInput != 0);
+    anim.SetBool("run", isMoving());
     anim.SetBool("grounded", isGrounded());
   }
 
@@ -59,5 +59,9 @@ public class PlayerMovement : MonoBehaviour
 
   public bool canAttack() {
     return isGrounded();
+  }
+
+  public bool isMoving() {
+    return horizontalInput != 0;
   }
 }

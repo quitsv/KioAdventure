@@ -14,5 +14,6 @@ public class CharacterStatHealthModifierSO : CharacterStatModifierSO
         }else{
             Debug.Log("no health");
         }
+        
     }
 }

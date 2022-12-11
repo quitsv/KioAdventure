@@ -16,7 +16,7 @@ MonoBehaviour:
   <MaxStackSize>k__BackingField: 99
   <Name>k__BackingField: Potion (S)
   <Description>k__BackingField: Restore 10 health
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: a99e56c3fe23081459615a6450a57d76, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 690ade8b2d1a99a4fb8336a329ce6349, type: 3}
   <DropChance>k__BackingField: 80
   modifiersData:
   - statModifier: {fileID: 11400000, guid: 9f393ed051b4fc841a36973d573479d3, type: 2}

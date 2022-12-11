@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
     private float attackRange = 1;
 
     int currentWeaponNumber;
-
+    int canChangeWeapon;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -38,7 +38,15 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            ChangeWeapon();
+            if (canChangeWeapon == 1)
+            {
+                ChangeWeapon();
+            }
+            else
+            {
+                Debug.Log("No Other Weapon!");
+            }
+
         }
 
     }
@@ -60,6 +68,10 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+   public void CanChangeWeapon(int val)
+    {
+        canChangeWeapon = val;
+    }
     private void Attack()
     {
         if (PauseMenu.isPaused())

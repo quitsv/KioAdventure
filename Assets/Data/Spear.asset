@@ -18,5 +18,7 @@ MonoBehaviour:
   <Description>k__BackingField: Equipable once and gain more attack power.
   <ItemImage>k__BackingField: {fileID: 21300000, guid: c2ef85c875c1cb542adc864b945949c8, type: 3}
   <DropChance>k__BackingField: 100
-  modifiersData: []
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 946de0e62f134514599a701e7e721504, type: 2}
+    value: 1
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 77f79dff86b419c4d8cae9a619d26a95, type: 3}

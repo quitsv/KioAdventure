@@ -9030,6 +9030,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.94
       objectReference: {fileID: 0}
+    - target: {fileID: 6749292728080791104, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6749292728653796760, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9077,6 +9081,10 @@ PrefabInstance:
     - target: {fileID: 6749292728653796761, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749292728653796761, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7223622190480152266, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
       propertyPath: m_Radius
@@ -9126,6 +9134,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1443660989}
+    - target: {fileID: 9166327438969806582, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e34ff8aae414d041a85543a2e58e698, type: 3}
 --- !u!1001 &7138161147762881040

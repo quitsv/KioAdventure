@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Background
   - Chest
+  - Ladder
+  - Interactable
   layers:
   - Default
   - TransparentFX

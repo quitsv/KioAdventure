@@ -6,46 +6,48 @@ using UnityEngine.Events;
 public class DoorInteractable : MonoBehaviour
 {
 
-    public bool isInRange;
-    public BossHealth bossIsDead;
-    public KeyCode interactKey;
-    public UnityEvent interactAction;
+  private bool isInRange;
+  public GameObject boss;
+  private Health bossHealth;
+  private bool bossIsDead = false;
+  public KeyCode interactKey;
+  public UnityEvent interactAction;
 
-    // Start is called before the first frame update
-    void Start()
+  // Start is called before the first frame update
+  void Start()
+  {
+    bossHealth = boss.GetComponent<Health>();
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+    bossIsDead = bossHealth.isDead();
+
+    if (isInRange && bossIsDead)
     {
-        bossIsDead = BossHealth.bossIsDead;
+      if (Input.GetKeyDown(interactKey))
+      {
+        interactAction.Invoke();
+      }
     }
+  }
 
-    // Update is called once per frame
-    void Update()
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.CompareTag("Player"))
     {
-        bossIsDead = BossHealth.IsDead();
-
-        if(isInRange && bossIsDead)
-        {
-            if(Input.GetKeyDown(interactKey))
-            {
-                interactAction.Invoke();
-            }
-        }
+      isInRange = true;
+      Debug.Log("Player now in Range");
     }
+  }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+  private void OnTriggerExit2D(Collider2D collision)
+  {
+    if (collision.gameObject.CompareTag("Player"))
     {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            isInRange = true;
-            Debug.Log("Player now in Range");
-        }
+      isInRange = false;
+      Debug.Log("Player now not in Range");
     }
-
-        private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            isInRange = false;
-            Debug.Log("Player now not in Range");
-        }
-    }
+  }
 }

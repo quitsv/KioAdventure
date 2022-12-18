@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.SceneManagement;
 public class DoorInteractable : MonoBehaviour
 {
 
@@ -49,5 +49,9 @@ public class DoorInteractable : MonoBehaviour
       isInRange = false;
       Debug.Log("Player now not in Range");
     }
+  }
+
+  public void LoadGame(){
+      SceneManager.LoadScene("Game Over");
   }
 }

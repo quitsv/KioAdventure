@@ -9196,6 +9196,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4713717484369028, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
   m_PrefabInstance: {fileID: 1683707065}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &495287504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+  m_PrefabInstance: {fileID: 1683707065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fa64a8564647646b0c56fc6062256e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &497540363
 GameObject:
   m_ObjectHideFlags: 0
@@ -14664,20 +14675,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1216294114850396748, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
   m_PrefabInstance: {fileID: 1216294114552783064}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &845118108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845118100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c69c54d3cf693c48bd52b792968bfcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  droppedItemPrefab: {fileID: 0}
-  lootList: []
 --- !u!1 &867201171
 GameObject:
   m_ObjectHideFlags: 0
@@ -26861,9 +26858,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 845118100}
     - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 768946148}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 495287504}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DoorInteractable, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984109670, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
       propertyPath: m_Name
       value: Door Close
@@ -33644,6 +33673,22 @@ PrefabInstance:
     - target: {fileID: 1216294114415292598, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216294114850396736, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
+      propertyPath: m_Size.x
+      value: 13.72744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216294114850396736, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007047415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216294114850396738, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
+      propertyPath: range
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216294114850396738, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
+      propertyPath: colliderDistance
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1216294116134337888, guid: 9c2ac08ac6fbddb45aa4428644d10eba, type: 3}
       propertyPath: m_LocalPosition.x

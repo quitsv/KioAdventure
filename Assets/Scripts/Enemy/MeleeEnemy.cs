@@ -20,6 +20,8 @@ public class MeleeEnemy : MonoBehaviour
   private Health playerHealth;
   private EnemyPatrol enemyPatrol;
 
+  public AudioSource MonsterSFX;
+
   private void Awake()
   {
     anim = GetComponent<Animator>();
@@ -35,6 +37,7 @@ public class MeleeEnemy : MonoBehaviour
       {
         cooldownTimer = 0;
         anim.SetTrigger("attack");
+        MonsterSFX.Play();
       }
     }
 

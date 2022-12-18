@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     private Animator animator;
     private bool dead;
 
+    public AudioSource HitSFX;
+
     [Header("iFrame")]
     [SerializeField] private float iFrameDuration;
     [SerializeField] private float numberOfFlashes;
@@ -33,6 +35,7 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             animator.SetTrigger("hit");
+            HitSFX.Play();
             StartCoroutine(FlashSprite());
             Debug.Log(currentHealth);
         }

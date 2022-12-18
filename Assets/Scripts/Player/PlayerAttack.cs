@@ -12,8 +12,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private int spearAttackDamage = 60;
     private float attackRange = 1;
 
+    public AudioSource SwordSFX, SpearSFX;
+
     int currentWeaponNumber;
     int canChangeWeapon;
+
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -78,6 +82,7 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         anim.SetTrigger("attack");
+        SwordSFX.Play();
         cooldownTimer = 0;
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
@@ -94,6 +99,7 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         anim.SetTrigger("SpearAttack");
+        SpearSFX.Play();
         cooldownTimer = 0;
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 

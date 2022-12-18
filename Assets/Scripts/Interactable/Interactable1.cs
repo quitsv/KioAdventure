@@ -8,6 +8,8 @@ public class Interactable1 : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
+
+    public AudioSource LeverPullSFX;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class Interactable1 : MonoBehaviour
             if(Input.GetKeyDown(interactKey))
             {
                 interactAction.Invoke();
+                LeverPullSFX.Play();
             }
         }
     }

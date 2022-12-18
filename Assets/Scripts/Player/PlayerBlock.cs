@@ -9,6 +9,8 @@ public class PlayerBlock : MonoBehaviour
   private Health health;
   private PlayerMovement playerMovement;
 
+  public AudioSource BlockSFX;
+
   private void Awake()
   {
     blocking = false;
@@ -36,6 +38,7 @@ public class PlayerBlock : MonoBehaviour
     blocking = true;
 		health.SetInvulnerable(true);
     anim.SetBool("block", true);
+    BlockSFX.Play();
   }
 
   private void UnBlock()

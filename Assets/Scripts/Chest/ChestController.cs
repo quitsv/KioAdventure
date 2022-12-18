@@ -8,6 +8,8 @@ public class ChestController : MonoBehaviour
     private Animator anim;
     public bool isOpen;
 
+    public AudioSource ChestSFX;
+
     public bool isTaken = false;
     public void Awake()
     {
@@ -25,6 +27,7 @@ public class ChestController : MonoBehaviour
             isOpen = true;
 
             anim.SetBool("Terbuka", isOpen);
+            ChestSFX.Play();
             Debug.Log("Chest is Open");
         }
 
